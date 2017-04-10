@@ -323,7 +323,6 @@ install(){
     echo -e "Your Password: \033[41;37m ${shadowsockspwd} \033[0m"
     echo -e "Your Local Port: \033[41;37m 1080 \033[0m"
     echo -e "Your Encryption Method: \033[41;37m rc4-md5 \033[0m"
-    exit 1
 }
 
 # Uninstall Shadowsocks-go
@@ -366,6 +365,7 @@ install_shadowsocks_go(){
         firewall_set
     fi
     install
+    exit 1
 }
 
 # Initialization step
