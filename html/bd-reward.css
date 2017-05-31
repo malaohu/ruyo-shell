@@ -1,10 +1,4 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
-    <style>
-        .box-size {
+   .box-size {
             box-sizing: border-box;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
@@ -241,50 +235,3 @@
                 margin: 0;
                 padding: 0;
             }
-    </style>
-</head>
-<body>
-    <p>扒百度站长打赏！ 去掉百度钱包支付！</p>
-    <div class="bd-reward-stl">
-        <p class="bd-pay-info">打赏博主辣条一袋</p>
-        <button id="bdRewardBtn"><span>赏</span></button>
-    </div>
-    <div class="bd-dialog" style="display:none">
-        <div class="bd-dialog-bg"></div>
-        <div class="bd-dialog-content bd-dialog-pc ">
-            <i class="bd-close-dialog">×</i>
-            <h2 class="bd-dialog-content-pc-title">打赏支付方式：</h2>
-            <div class="bd-payment-way">
-                <label for="alipay"><input type="radio" id="alipay" class="reward-radio" value="1" name="reward-way" checked>支付宝</label>
-                <label for="wechat"><input type="radio" id="wechat" class="reward-radio" value="2" name="reward-way">微信支付</label>
-            </div>
-            <div class="bd-payment-img">
-                <img class="qrcode-img" id="qrCode_1" src="http://zhanzhang.bj.bcebos.com/reward/b8e1212d426992fd52d4feb0612693eb.png" style="width: 229.33px; display:block;">
-                <div class="qrcode-img" id="qrCode_2" style="display: none;">
-                    <div class="qrcode-border box-size" style="border-radius: 26.56px; width: 210px; height: 210px; padding: 16px; margin-top: 24.33px; border: 8px solid rgb(60, 175, 54);">
-                        <img src="http://zhanzhang.bj.bcebos.com/reward/75bdcc68bdaf2960c8ed471d8fe59a3e.jpg" style="width: 164px;">
-                    </div>
-                    <p class="qrcode-tip" style="width: 42.67px;">打赏</p>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
-    <script>
-
-        $("#bdRewardBtn").click(function () {
-            $(".bd-dialog").show();
-            $(".bd-close-dialog").click(function () {
-                $(".bd-dialog").hide();
-            });
-            $(".reward-radio").click(function () {
-                $(".qrcode-img").hide();
-                $("#qrCode_" + $(this).attr('value')).show();
-            });
-        });
-        
-    </script>
-</body>
-</html>
