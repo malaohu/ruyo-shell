@@ -1,5 +1,5 @@
 # 安装
-wget http://7xnve2.com1.z0.glb.clouddn.com/install_fs.sh
+wget https://github.com/malaohu/ruyo-shell/raw/master/FinalSpeed/install_fs.sh
 chmod +x install_fs.sh
 ./install_fs.sh 2>&1 | tee install.log
 
