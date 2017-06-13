@@ -8,3 +8,6 @@ nohup /usr/local/net_speeder/net_speeder venet0 "ip" >/dev/null 2>&1 &
 
 # 关闭
 killall net_speeder
+
+#添加开机启动
+echo "nohup /usr/local/net_speeder/net_speeder venet0 \"ip\" >/dev/null 2>&1 &" >> /etc/rc.local
