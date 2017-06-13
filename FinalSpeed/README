@@ -1,0 +1,24 @@
+# 安装
+wget http://7xnve2.com1.z0.glb.clouddn.com/install_fs.sh
+chmod +x install_fs.sh
+./install_fs.sh 2>&1 | tee install.log
+
+# 卸载
+sh /fs/stop.sh ; rm -rf /fs
+
+# 启动
+sh /fs/start.sh
+
+# 停止
+sh /fs/stop.sh
+
+# 重新启动
+sh /fs/restart.sh
+
+# 运行日记
+tail -f /fs/server.log
+
+# 每天晚上3点自动重启
+crontab -e
+0 3 * * * sh /fs/restart.sh
+```
