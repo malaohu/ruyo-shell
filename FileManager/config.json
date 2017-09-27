@@ -1,0 +1,18 @@
+{
+  "port": 8000,
+  "noAuth": false,
+  "baseURL": "",
+  "reCaptchaKey": "",
+  "reCaptchaSecret": "",
+  "log": "stdout",
+  "plugin": "",
+  "database":"/etc/filemanager/filemanager.db", 
+  "scope":"/srv",
+  "allowCommands": true,
+  "allowEdit": true,
+  "allowNew": true,
+  "commands": [
+    "git",
+    "svn"
+  ]
+}
