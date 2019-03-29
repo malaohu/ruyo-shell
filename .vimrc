@@ -10,6 +10,15 @@ set expandtab     " 将Tab自动转化成空格    [需要输入真正的Tab键�
 set shiftround    " 缩进时，取整 use multiple of shiftwidth when indenting with '<' and '>'
 set mouse=v
 
+" golang语法高亮
+" 需要安装
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go 
 
+" 将下面注释开启
+" call plug#begin()
+" Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+" call plug#end()
+" let g:go_version_warning = 0
 
 syntax on
