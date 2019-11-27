@@ -13,12 +13,14 @@ set mouse=v
 " golang语法高亮
 " 需要安装
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-" git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go 
+" git clone https://github.com/fatih/vim-go.git --branch v1.20 ~/.vim/plugged/vim-go 
 
 " 将下面注释开启
 " call plug#begin()
 " Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 " call plug#end()
 " let g:go_version_warning = 0
+" let g:go_fmt_autosave = 0
+
 
 syntax on
