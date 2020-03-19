@@ -12,3 +12,5 @@ make && make install
 chmod 600 /etc/ssh/ssh_host_rsa_key
 chmod 600 /etc/ssh/ssh_host_ecdsa_key
 chmod 600 /etc/ssh/ssh_host_ed25519_key
+
+ssh -V
