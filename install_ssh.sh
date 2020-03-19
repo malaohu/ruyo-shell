@@ -5,7 +5,7 @@ echo -e "\n"
 
 wget ftp://192.99.11.204/openssh-${v}p1.tar.gz
 tar -zxvf openssh-${v}p1.tar.gz
-cd openssh-8.2p1
+cd openssh-${v}p1
 ./configure --prefix=/usr --sysconfdir=/etc/ssh --with-pam --with-zlib --with-md5-passwords --with-tcp-wrappers
 make && make install
 
