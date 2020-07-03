@@ -14,6 +14,8 @@ set mouse=v
 " 需要安装
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 " git clone https://github.com/fatih/vim-go.git --branch v1.20 ~/.vim/plugged/vim-go 
+" git clone https://gitee.com/shtml/vim-go.git --branch v1.20 ~/.vim/plugged/vim-go (国内)
+
 
 " 将下面注释开启
 " call plug#begin()
