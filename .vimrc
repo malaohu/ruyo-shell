@@ -13,6 +13,7 @@ set mouse=v
 " golang语法高亮
 " 需要安装
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://gitee.com/astonishing_the_world/vim-plug/raw/master/plug.vim (国内)
 " git clone https://github.com/fatih/vim-go.git --branch v1.20 ~/.vim/plugged/vim-go 
 " git clone https://gitee.com/shtml/vim-go.git --branch v1.20 ~/.vim/plugged/vim-go (国内)
 
