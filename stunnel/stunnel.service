@@ -1,0 +1,13 @@
+[Unit]
+Description=stunnel
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStartPre=/usr/bin/chmod 600 /usr/local/nginx/conf/ssl/server.crt /usr/local/nginx/conf/ssl/server.key
+ExecStart=/usr/bin/stunnel /etc/stunnel/stunnel.conf
+RestartSec=3s
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
